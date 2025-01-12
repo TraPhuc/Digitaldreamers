@@ -5,47 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DALL-E 2</title>
     <style>
-        body {
+         body {
             margin: 0;
             font-family: Arial, sans-serif;
+            background-image: url('nendo1.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333;
         }
         header {
-            background-color: red;
-            color: white;
-            padding: 20px;
-            text-align: center;
+            width: 100%;
+            height: 250px;
+            background-image: url('5.jpg');
+            background-size: cover; /* Đảm bảo chiều ngang vừa khít và chiều cao đầy đủ */
+            background-repeat: no-repeat;
+            background-position: center;
         }
+		nav {
+            background-color: #ff69b4;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: #ff69b4;
+            list-style-type: none;
+            padding: 10px;
+            margin: 0;
+            border-radius: 5px;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            display: block;
+            margin: 5px 0;
+        }
+
+        nav ul li ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li ul li a:hover {
+            text-decoration: underline;}
+        
         main {
-            background-color: #FFCCCC; /* Màu đỏ pastel */
+            background-color: pink;
+            color: black;
             padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            width: 90%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
         }
         footer {
             background-color: white;
-            text-align: center;
-            padding: 10px;
             color: black;
-            border-top: 1px solid #ccc;
+            padding: 20px;
+            text-align: center; !!
+            width: 100%;
         }
-        h1, h2 {
-            color: #800000; /* Màu đỏ đậm hơn */
-        }
-        .section {
-            margin-bottom: 20px;
-        }
+		h1 {font-size: 400%;
+		color: red;
+		text-align: center;}
+		p {text-align: justify;}
     </style>
 </head>
 <body>
     <header>
-        <h1>DALL-E 2</h1>
     </header>
+	
+	<nav>
+        <ul>
+            <li><a href="../index.html">Trở Về Trang chủ</a></li>
+		</ul>
+</nav>
     <main>
+	<h1>DALL-E 2</h1>
+	 <!-- Chèn hình ảnh -->
+    <img src="hinh2.jpg" alt="Hình ảnh phần mềm" style="display: block; margin: 20px auto; max-width: 100%; height: auto; border-radius: 10px;">
         <div class="section">
-            <h2>1.1. Đặc trưng nổi bật</h2>
+            <h2>1. Đặc trưng nổi bật</h2>
             <p>DALL-E 2 là một sản phẩm của OpenAI, phần mềm này nổi bật với khả năng biến đổi văn bản thành hình ảnh cực kỳ chi tiết và sáng tạo. Ngoài ra, nó còn có tính năng “Inpainting” cho phép chỉnh sửa các chi tiết trong hình ảnh như thêm hoặc loại bỏ các vật thể một cách mượt mà. Điều này giúp các nhà thiết kế tạo ra các sản phẩm chính xác theo từng yêu cầu.</p>
-            <img src="https://via.placeholder.com/600x300" alt="DALL-E 2 đặc trưng" style="width: 100%; max-width: 600px; display: block; margin: 0 auto;">
+            <img src="hinh21.jpg" alt="DALL-E 2 đặc trưng" style="width: 100%; max-width: 600px; display: block; margin: 0 auto;">
         </div>
         <div class="section">
-            <h2>1.2. Ưu điểm</h2>
+            <h2>2. Ưu điểm</h2>
             <ul>
                 <li>Hình ảnh đầu ra sắc nét, độ phân giải cao và nhiều tùy chọn phong cách từ hiện thực đến trừu tượng.</li>
                 <li>Cung cấp khả năng mở rộng hình ảnh để tạo thêm các phần mới dựa trên các yếu tố trong ảnh gốc.</li>
@@ -53,22 +128,40 @@
             </ul>
         </div>
         <div class="section">
-            <h2>1.3. Nhược điểm</h2>
+            <h2>3. Nhược điểm</h2>
             <ul>
                 <li>Người dùng phải bỏ ra mức chi phí cao nếu muốn sử dụng đầy đủ tính năng.</li>
                 <li>Yêu cầu mô tả chi tiết ý tưởng bằng ngôn ngữ chính xác và cụ thể để AI hiểu đúng và tạo ra hình ảnh mong muốn.</li>
             </ul>
         </div>
         <div class="section">
-            <h2>1.4. Chi phí theo gói sử dụng</h2>
+            <h2>4. Chi phí theo gói sử dụng</h2>
             <ul>
                 <li><b>Miễn phí:</b> Cung cấp một số lượng tín dụng ban đầu miễn phí hàng tháng cho người dùng mới.</li>
                 <li><b>Trả phí:</b> Sau khi hết tín dụng miễn phí, người dùng có thể mua thêm với giá khoảng $15 cho 115 tín dụng (mỗi hình ảnh thường mất từ 1 đến 4 tín dụng tuỳ thuộc vào độ phức tạp và độ phân giải).</li>
             </ul>
         </div>
+		<div class="section">
+		<h2>5. Link dùng thử</h2>
+            <a href="https://openai.com/index/dall-e-3/" target="_blank" rel="noopener noreferrer">
+    Truy cập DALL-E 3
+</a>
+
+                
+        </div>
+		<h2>6. Video hướng dẫn sử dụng</h2>
+	<div class="video-container">
+        <iframe width="800" height="500"
+            src="https://www.youtube.com/embed/zVSkGsjPSD4?si=XkFg_-Bes07xWP24"
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+	</div> 
     </main>
     <footer>
-        <p>&copy; 2025 DALL-E 2 Information Page</p>
+          &copy;Nhóm tác giả: Digital dreamers  <br>
+		 &copy;Lớp: 12a4 - Trường THPT Trần Phú 
     </footer>
 </body>
 </html>
